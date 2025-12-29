@@ -1,0 +1,7 @@
+numpy
+tqdm
+fastapi
+jinja2
+uvicorn
+pillow
+pydantic
