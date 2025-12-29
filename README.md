@@ -19,7 +19,7 @@ The templates(for the webpage) were generated via Google Gemini.
 
 ⚙️ How to Run
 
-Once you have installed the repo and created the environment required to run, you can you the following commands,
+Once you have installed the repo and created the environment required to run, you can use the following commands,
 
 ```bash 
     $ python src\main.py
