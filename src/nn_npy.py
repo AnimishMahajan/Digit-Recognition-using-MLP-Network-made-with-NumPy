@@ -19,11 +19,7 @@ class network:
         for i in range(0, len(arch)-1):
         
             x = arch[i]
-
-            if i == len(arch)-2:
-                y = arch[i+1]
-            else:
-                y = arch[i+1] - 1
+            y = arch[i+1] if (i != len(arch)-2) else (arch[i+1] - 1)
             
             limit = np.sqrt(6 / (x + y))
             self.W[i] = np.random.uniform(low=-limit, high=limit, size=(y, x)).astype(np.float32)

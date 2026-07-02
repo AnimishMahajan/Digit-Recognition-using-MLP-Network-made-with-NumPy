@@ -16,9 +16,9 @@ model1 = nn.network()
 model1.model(
     Inputs = X,
     Outputs = Y,
-    hidden_layers = [11],
+    hidden_layers = [11, 10],
     activation_func = ["relu", "softmax"],
-    epochs = 10,
+    epochs = 250,
     learning_rate = 0.0001,
     batch = 10
 )

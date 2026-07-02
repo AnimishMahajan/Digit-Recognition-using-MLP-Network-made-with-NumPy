@@ -35,7 +35,7 @@ class ImagePayload(BaseModel):
 
 @app.get("/")
 def home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request, "index.html", {"request": request})
 
 @app.post("/predict")
 async def predict_digit(payload: ImagePayload):
@@ -83,4 +83,4 @@ async def predict_digit(payload: ImagePayload):
         return JSONResponse({"error": str(e)}, status_code=500)
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("main:app", host="127.0.0.1", port=8500, reload=True)
